@@ -1,0 +1,92 @@
+body {margin: 0;}
+
+        .container {display: grid;}
+
+        header {
+            grid-column-start: 2;
+            grid-column-end: 12;
+            background-color: #dcdcdd;
+            font:1.4rem;
+            font-family: sans-serif;
+            color: #353535;
+            font-variant: small-caps;
+        }
+
+        b {
+            font: 2rem "Fira Sans", sans-serif;
+            color: #353535;
+            font-variant: small-caps;
+        }/*altera parte do título*/
+
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            width: 200px;
+        }
+        
+        li a {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            display: block;
+            color: #353535;
+            padding: 8px 16px;
+            text-decoration: none;
+            
+        }
+        
+        li {float: center;}
+
+        a:hover {
+            background-color: #dcdcdd;
+            color: black
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #dcdcdd 1px;
+        }
+
+        .a, .a:link {text-decoration: underline;}
+        .a:hover {color: #dcdcdc}
+        .a:visited {color: #0000ff;}
+
+        .principal {
+            grid-column-start: 2;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+            font-family: sans-serif;
+            color: #353535;
+        }
+
+        .itens {
+                grid-row-start: auto;
+                width: 400px;
+                list-style-type: none;
+        }
+
+        h2 {border-bottom: 2px solid #dcdcdd;}
+
+        h3 {border-bottom: 2px solid #353535;}
+
+        p::first-letter {font-size: xx-large;}/*alteraçaõ na primeira letra dos parágrafos*/
+       
+        .contato{background-color: #dcdcdd;}
+        
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
